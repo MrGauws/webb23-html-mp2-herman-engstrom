@@ -108,7 +108,7 @@ p {
 }
 
 .startsida {
-	background-image: url('/img/background.jpg');
+	background-image: url('img/background.jpg');
     background-repeat: no-repeat;
     background-attachment: local;
     background-size: cover;
