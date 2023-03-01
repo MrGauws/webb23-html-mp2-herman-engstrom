@@ -1,0 +1,272 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+.container {
+	width: 100%;
+	position: relative;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+#navbar{
+    padding-right: 200px
+    
+}
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+}
+
+nav li {
+	margin: 0 20px;
+}
+
+.asdf a{
+    font-family:'Courier New', Courier, monospace;
+    padding-left: 35px;
+    text-decoration: none;
+	color: #cc0101;
+	font-size: 24px;
+}
+.asdf a:hover {
+    color:#808080;
+}
+
+main {
+	padding-top: 100px;
+	text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 24px;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+
+
+
+/* MENU */
+.menu-item {
+	background-color: #f7f7f7;
+	padding: 20px;
+    margin-left: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item h2 {
+	font-size: 24px;
+	margin-top: 0;
+    
+}
+
+.menu-item p {
+	text-align: right;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	
+}
+
+.menu-item p:last-child {
+	margin-bottom: 0;
+	font-weight: bold;
+    
+}
+
+.startsida {
+	background-image: url('/img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+	position: auto;
+	display: flex;
+}
+.startsida p {
+	position: absolute;
+	top: 20%;
+	left: 50%
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 10px;
+	opacity: 0;
+	transition: background-color 0.5s, opacity 0.5s;
+	
+	
+}
+/* Default styles */
+.startsida:hover p {
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container2 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	width: 100%;
+}
+
+.box {
+	background-color: #7c7979;
+	padding: 20px;
+	text-align: center;
+	opacity: 80%
+}
+.box h2 {
+	margin-bottom: 10%
+}
+
+/* Styles for screens smaller than or equal to 768px */
+@media screen and (max-width: 768px) {
+	.container2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* Styles for screens smaller than or equal to 480px */
+@media screen and (max-width: 480px) {
+	.container2 {
+		grid-template-columns: 1fr;
+	}
+	.box h2 {
+		font-size: 24px;
+	}
+}
+
+/* Style for the footer icons */
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+}
+
+/* Adds a hover effect */
+.fa:hover {
+	opacity: 0.7;
+}
+
+/* Sets a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+	background: #3b5998;
+	color: white;
+  }
+  
+  /* Instagram */
+  .fa-instagram {
+	background: #125688;
+	color: white;
+}
+/* Footer at the bottom */
+footer {
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	opacity: 0; /* Sätt standard opacity till 0% */
+	transition: opacity 0.5s ease-in-out; /* Skapa en mjuk övergång för opacity-ändringen */
+  }
+  
+footer:hover {
+	opacity: 1; /* Ändra opacity till 100% när användaren hoverar över footern */
+}
+.fa-google {
+	background: #dd4b39;
+	color: white;
+}
+
+@media (max-width: 768px) {
+	nav {
+		height: auto;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav li {
+		margin: 10px 0;
+	}
+
+	main {
+		padding-top: 80px;
+	}
+
+	h1 {
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-size: 20px;
+		line-height: 1.3;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		padding: 10px;
+	}
+}
+
+
+
+
+Varje sida behöver minst en del där flexbox eller grid används.
+Ha kommentarer & formaterat (kommentera om det finns något unikt eller något nytt ni har lärt er )
+
+VG
+
+
+/*Den ska ha transitions eller animationer minst med 2 olika egenskaper/attributer som animeras t.ex opacity, color, filter blur() etc.*/
+/*kontaktinfo med telefon nr ska öppna enhetens default telefon appen*/
+/*kontakt info om email ska öppnas via default email appen.*/
+hemsidan ska vara responsivt anpassad till mobilen främst (betyder att den ska se snyggast ut på mobilen där all content är tydlig, är läsbar & navigerbar )
+Ha kommentarer & formaterat (kommentera om det finns något unikt eller något nytt ni har lärt er )
+
