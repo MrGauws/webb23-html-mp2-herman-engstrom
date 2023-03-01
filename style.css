@@ -178,50 +178,50 @@ p {
 	color: white;
   }
   
-  /* Instagram */
-  .fa-instagram {
-	  background: #125688;
-	  color: white;
-	}
-	/* Footer at the bottom */
-	footer {
-		text-align: center;
-		position: fixed;
-		width: 100%;
-		bottom: 0;
-		background-color: #333;
-		color: #fff;
-		padding: 20px;
-		opacity: 0; /* Sätt standard opacity till 0% */
-		transition: opacity 0.5s ease-in-out; /* Skapa en mjuk övergång för opacity-ändringen */
-	}
+/* Instagram */
+.fa-instagram {
+	background: #125688;
+	color: white;
+}
+/* Footer at the bottom */
+footer {
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	opacity: 0; /* Sätt standard opacity till 0% */
+	transition: opacity 0.5s ease-in-out; /* Skapa en mjuk övergång för opacity-ändringen */
+}
 	
-	footer:hover {
-		opacity: 1; /* Ändra opacity till 100% när användaren hoverar över footern */
+footer:hover {
+	opacity: 1; /* Ändra opacity till 100% när användaren hoverar över footern */
+}
+.fa-google {
+	background: #dd4b39;
+	color: white;
+}
+
+/* Styles for screens smaller than or equal to 768px */
+@media (max-width: 768px) {
+	nav {
+		height: auto;
+		flex-direction: column;
+		align-items: flex-start;	
 	}
-	.fa-google {
-		background: #dd4b39;
-		color: white;
+	.container2 {
+		grid-template-columns: repeat(2, 1fr);
 	}
 
-	/* Styles for screens smaller than or equal to 768px */
-	@media (max-width: 768px) {
-		nav {
-			height: auto;
-			flex-direction: column;
-			align-items: flex-start;	
-		}
-		.container2 {
-			grid-template-columns: repeat(2, 1fr);
-		}
-		
-		nav ul {
-			flex-direction: column;
-		}
-		
-		nav li {
-			margin: 10px 0;
-		}
+	nav ul {
+		flex-direction: column;
+	}
+	
+	nav li {
+		margin: 10px 0;
+	}
 		
 	main {
 		padding-top: 80px;
