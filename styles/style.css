@@ -1,0 +1,345 @@
+/* Set default margin, padding, and box-sizing for all elements */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Set the height of the HTML and body elements to 100% */
+html, body {
+	height: 100%;
+}
+/* Create a container element that stretches to the full width of the screen */
+.container {
+	width: 100%;
+	position: relative;
+}
+/* Position the header element at the top of the page with a semi-transparent white background */
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+/* Add right padding to the #navbar element */
+#navbar{
+    padding-right: 200px
+    
+}
+/* Create a navigation bar with a height of 80 pixels and center its contents */
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+}
+/* Display the navigation links as a row and remove the bullet points */
+nav ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+}
+/* Applies a margin of 20 pixels on the left and right sides of each list item in the navigation bar. */
+nav li {
+	margin: 0 20px;
+}
+/* Applies a custom font style and size to links within an element with a class of "asdf", adds left padding to the link, changes its text color, and increases its font size. */
+.asdf a{
+    font-family:'Courier New', Courier, monospace;
+    padding-left: 35px;
+    text-decoration: none;
+	color: #cc0101;
+	font-size: 24px;
+}
+/* Changes the link text color when the mouse hovers over it. */
+.asdf a:hover {
+    color:#808080;
+}
+/* Adds padding to the top of the "main" element, centers its contents horizontally, and aligns them vertically in the center. It also sets the space between the elements inside "main" to be evenly distributed. */
+main {
+	padding-top: 100px;
+	text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Sets the font size of "h1" elements to 48 pixels and adds a margin of 20 pixels to the bottom. */
+h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+/* Sets the font size of "p" elements to 24 pixels, sets the line height to 1.5, and adds a margin of 50 pixels to the bottom. */
+p {
+	font-size: 24px;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+
+/* --------------MENU----------- */
+/* Styles each menu item by setting the background color to a light gray, adding padding to the content, setting the margin on the left and bottom sides, rounding the corners with a border radius, and giving it a box shadow effect */
+.menu-item {
+	background-color: #f7f7f7;
+	padding: 20px;
+    margin-left: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Styles the h2 heading element within each menu item by setting the font size to 24px and removing any top margin. */
+.menu-item h2 {
+	font-size: 24px;
+	margin-top: 0;
+}
+/*Styles for paragraph. Aligns the text, font size, margins. */
+.menu-item p {
+	text-align: right;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+/*Styles for last child paragraph element inside menu-item*/
+.menu-item p:last-child {
+	margin-bottom: 0;
+	font-weight: bold;
+    
+}
+/*Styles for the startsida involving img, preventing it from repeating, covers the screen, uses flexbox.*/
+.startsida {
+	background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+	position: auto;
+	display: flex;
+}
+/*Styles for paragraph elements inside startsida. Also adds a transition effect for the cbackground color and opacity*/
+.startsida p {
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 10px;
+	opacity: 0;
+	transition: background-color 0.5s, opacity 0.5s;
+}
+/* Default styles */
+.startsida:hover p {
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container2 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	width: 100%;
+}
+
+.box {
+	background-color: #7c7979;
+	padding: 20px;
+	text-align: center;
+	opacity: 80%
+}
+
+.box h2 {
+	margin-bottom: 10%
+}
+
+
+/* Style for the footer icons */
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+}
+
+/* Adds a hover effect */
+.fa:hover {
+	opacity: 0.7;
+}
+
+/* Sets a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+	background: #3b5998;
+	color: white;
+  }
+  
+/* Instagram */
+.fa-instagram {
+	background: #125688;
+	color: white;
+}
+/* Footer at the bottom */
+footer {
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	opacity: 0; /* Sets the default opacity to 0*/
+	transition: opacity 0.5s ease-in-out; /* Create a soft transition for the opacity-change */
+}
+/* Changes opacity to 100% when user hoovers over the footer*/	
+footer:hover {
+	opacity: 1; 
+}
+/* Sets the icon for google red and the G to white*/
+.fa-google {
+	background: #dd4b39;
+	color: white;
+}
+
+/*Styles the information card with color, margins, and aligns the texts*/
+.card {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: justify;
+	position: relative;
+}
+/*Ensures that the h2 element is in the top */
+.card h2 {
+	margin-top: 0;
+}
+/*Defines the styling for a button element that also triggers the display of hidden content.*/
+.read-more-btn {
+	background-color: #4caf91;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+/*Defines the styling for the hidden content that will be revealed when the button is clicked.*/
+.hidden-content {
+	display: none;
+	margin-top: 10px;
+}
+/*Defines the styling for the paragraphs inside the hidden content.*/
+.hidden-content p {
+	margin-bottom: 10px;
+}
+/*Refers to a checkbox input element that will be used to toggle the display of the hidden content.*/
+#toggle {
+	display: none;
+}
+/*Targets the hidden content that immediately follows the checked checkbox input element, and sets its display property to "block" to reveal the hidden content.*/
+#toggle:checked ~ .hidden-content {
+	display: block;
+}
+/*Defines a grid layout for a group of form elements*/
+.form-group {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+	grid-row-gap: 10px;
+}
+/*Targets the label element inside the form group.*/
+.form-group label {
+	font-weight: bold;
+}
+/*Target the input and textarea elements inside the form group.*/
+.form-group input,
+.form-group textarea {
+	padding: 10px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+/*Target the input and textarea elements when they receive focus.*/
+.form-group input:focus,
+.form-group textarea:focus {
+	border-color: #F44336;
+}
+/*Targets the submit button of the form. Involving the styling*/
+button[type="submit"] {
+	background-color: #F44336;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+/*Targets the submit button when it is hovered over.*/
+button[type="submit"]:hover {
+	background-color: #ff6659;
+}
+/*Targets a specific form element with the ID "booking-form".*/
+#booking-form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	padding: 20px;
+}
+
+/* Styles for screens smaller than or equal to 768px */
+@media (max-width: 768px) {
+	nav {
+		height: auto;
+		flex-direction: column;
+		align-items: flex-start;	
+	}
+	.container2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+	
+	nav li {
+		margin: 10px 0;
+	}
+		
+	main {
+		padding-top: 80px;
+	}
+	
+	h1 {
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+	
+	p {
+		font-size: 20px;
+		line-height: 1.3;
+		margin-bottom: 30px;
+	}
+	
+	footer {
+		padding: 10px;
+	}
+}
+/* Styles for screens smaller than or equal to 480px */
+@media screen and (max-width: 480px) {
+	.container2 {
+		grid-template-columns: 1fr;
+	}
+	.box h2 {
+		font-size: 24px;
+	}
+}
+

@@ -7,9 +7,9 @@
     <meta name="keywords" content="pizzeria, italiensk pizza, pizza, pasta, ystad, boka bord, beställa online, mat, bäst pizza, bäst, triangeln">
     <meta name="author" content="Pizzeria Triangeln">
     <title>Pizzeria Triangeln - Bästa pizzan i stan </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <html>
 <body>
@@ -28,23 +28,43 @@
         <div class="startsida">
 			<p>Pizzera Triangeln - Bästa pizzan i stan</p>
         </div>
-<body>
-	<h1>Boka ett bord</h1>
-	<form>
-		<label for="name">Namn:</label>
-		<input type="text" id="name" name="name" required>
+		<body>
+			<main id="booking-form">
+				<form>
+					<button type="submit">Boka</button>
+					<div class="form-group">
+						<label for="name">Namn</label>
+						<input type="text" id="name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">E-postadress</label>
+						<input type="email" id="email" required>
+					</div>
+					<div class="form-group">
+						<label for="phone">Telefonnummer</label>
+						<input type="tel" id="phone" required>
+					</div>
+					<div class="form-group">
+						<label for="date">Datum</label>
+						<input type="date" id="date" required>
+					</div>
+					<div class="form-group">
+						<label for="time">Tid</label>
+						<input type="time" id="time" required>
+					</div>
+					<div class="form-group">
+						<label for="guests">Antal gäster</label>
+						<input type="number" id="guests" min="1" max="20" required>
+					</div>
+					<div class="form-group">
+						<label for="message">Övriga önskemål eller meddelande</label>
+						<textarea id="message"></textarea>
+					</div>
+				</form>
+			</main>
+		</body>
 
-		<label for="date">Datum:</label>
-		<input type="date" id="date" name="date" required>
-
-		<label for="time">Tid:</label>
-		<input type="time" id="time" name="time" required>
-
-		<input type="submit" value="Boka">
-	</form>
-</body>
-  <!-- Footer med copyright text & länkar -->
-
+<!-- Footer med copyright text & länkar -->
 <footer id="footer">
 	<a href="tel:+4641169930">0411 - 699 30</a>
 	 &copy; Pizzeria Triangeln &#169;
@@ -53,9 +73,3 @@
 	<a href="mailto:pizzatriangeln@ystad.se" class="fa fa-google"></a>
   </footer>
 </html>
-
-
-(Gör en footer med Adresslänk, Tellänk, face/insta länk)
-Info om restaurangen (ni kan hitta på)
-Ha kommentarer & formaterat (kommentera om det finns något unikt eller något nytt ni har lärt er )
-Formulär för att boka bord med följande inputs: (Använd korrekt struktur, form ska vara flex eller grid)
