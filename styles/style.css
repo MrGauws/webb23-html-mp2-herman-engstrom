@@ -96,7 +96,7 @@ p {
 }
 /*Styles for paragraph. Aligns the text, font size, margins. */
 .menu-item p {
-	text-align: right;
+	text-align: center;
 	font-size: 16px;
 	margin-top: 10px;
 	margin-bottom: 5px;
