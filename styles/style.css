@@ -4,6 +4,16 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+/* ========== Global Color Variables ========== */
+:root{
+    --boxBGcolor: #7c7979;
+    --navtextColor: #cc0101;
+    --bgColor: #F7F7F7;
+    --padding: 10px;
+}   
+.my-variablecss{
+    padding: var(--padding);
+}
 /* Set the height of the HTML and body elements to 100% */
 html, body {
 	height: 100%;
@@ -49,7 +59,7 @@ nav li {
     font-family:'Courier New', Courier, monospace;
     padding-left: 35px;
     text-decoration: none;
-	color: #cc0101;
+	color: var(--navtextColor);
 	font-size: 24px;
 }
 /* Changes the link text color when the mouse hovers over it. */
@@ -79,7 +89,7 @@ p {
 /* --------------MENU----------- */
 /* Styles each menu item by setting the background color to a light gray, adding padding to the content, setting the margin on the left and bottom sides, rounding the corners with a border radius, and giving it a box shadow effect */
 .menu-item {
-	background-color: #f7f7f7;
+	background-color: var(--bgColor);
 	padding: 20px;
     margin-left: 20px;
 	margin-bottom: 20px;
@@ -98,7 +108,7 @@ p {
 .menu-item p {
 	text-align: center;
 	font-size: 16px;
-	margin-top: 10px;
+	margin-top: var(--padding);
 	margin-bottom: 5px;
 }
 /*Styles for last child paragraph element inside menu-item*/
@@ -128,7 +138,7 @@ p {
 	font-size: 24px;
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.7);
-	padding: 10px;
+	padding: var(--padding);
 	opacity: 0;
 	transition: background-color 0.5s, opacity 0.5s;
 }
@@ -141,12 +151,12 @@ p {
 .container2 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 10px;
+	grid-gap: var(--padding);
 	width: 100%;
 }
 
 .box {
-	background-color: #7c7979;
+	background-color: var(--boxBGcolor);
 	padding: 20px;
 	text-align: center;
 	opacity: 80%
@@ -227,21 +237,21 @@ footer:hover {
 	background-color: #4caf91;
 	color: #fff;
 	border: none;
-	padding: 10px;
+	padding: var(--padding);
 	border-radius: 3px;
 	cursor: pointer;
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: var(--padding);
+	right: var(--padding);
 }
 /*Defines the styling for the hidden content that will be revealed when the button is clicked.*/
 .hidden-content {
 	display: none;
-	margin-top: 10px;
+	margin-top: var(--padding);
 }
 /*Defines the styling for the paragraphs inside the hidden content.*/
 .hidden-content p {
-	margin-bottom: 10px;
+	margin-bottom: var(--padding);
 }
 /*Refers to a checkbox input element that will be used to toggle the display of the hidden content.*/
 #toggle {
@@ -256,7 +266,7 @@ footer:hover {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	align-items: center;
-	grid-row-gap: 10px;
+	grid-row-gap: var(--padding);
 }
 /*Targets the label element inside the form group.*/
 .form-group label {
@@ -265,7 +275,7 @@ footer:hover {
 /*Target the input and textarea elements inside the form group.*/
 .form-group input,
 .form-group textarea {
-	padding: 10px;
+	padding: var(--padding);
 	border-radius: 3px;
 	border: 1px solid #ccc;
 }
@@ -282,7 +292,7 @@ button[type="submit"] {
 	padding: 10px 20px;
 	border-radius: 3px;
 	cursor: pointer;
-	margin-bottom: 10px;
+	margin-bottom: var(--padding);
 	transition: background-color 1s ease;
 }
 /*Targets the submit button when it is hovered over.*/
@@ -322,7 +332,7 @@ button[type="submit"]:hover {
 	
 	h1 {
 		font-size: 36px;
-		margin-bottom: 10px;
+		margin-bottom: var(--padding);
 	}
 	
 	p {
@@ -332,7 +342,7 @@ button[type="submit"]:hover {
 	}
 	
 	footer {
-		padding: 10px;
+		padding: var(--padding);
 	}
 }
 /* Styles for screens smaller than or equal to 480px */
